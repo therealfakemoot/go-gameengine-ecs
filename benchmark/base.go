@@ -1,7 +1,7 @@
 package ecs_benchmark
 
 import (
-	"github.com/marioolofo/go-gameengine-ecs"
+	"github.com/therealfakemoot/go-gameengine-ecs"
 )
 
 const (

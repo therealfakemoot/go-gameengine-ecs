@@ -18,7 +18,7 @@ Features:
 ### Installation
 
 ```sh
-go get github.com/marioolofo/go-gameengine-ecs
+go get github.com/therealfakemoot/go-gameengine-ecs
 ```
 
 > This project was made with Go 1.17, but it may work with older versions too
@@ -33,7 +33,7 @@ From [simple.go](./examples/simple/simple.go):
 package main
 
 import (
-	"github.com/marioolofo/go/gameengine/ecs"
+	"github.com/therealfakemoot/go/gameengine/ecs"
 )
 
 // Component IDs
@@ -121,7 +121,7 @@ performance comparison for this package as GameEngineECS, [Entitas](https://gith
 ```sh
 goos: linux
 goarch: amd64
-pkg: github.com/marioolofo/go/gameengine/ecs/benchmark
+pkg: github.com/therealfakemoot/go/gameengine/ecs/benchmark
 cpu: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
 BenchmarkEntitas-8              1000000000               0.0000043 ns/op
 BenchmarkEnto-8                 1000000000               0.0000147 ns/op
@@ -129,7 +129,7 @@ BenchmarkGecs-8                 1000000000               0.0000694 ns/op
 BenchmarkLecsGO-8               1000000000               0.0000146 ns/op
 BenchmarkGameEngineECS-8        1000000000               0.0000092 ns/op
 PASS
-ok      github.com/marioolofo/go/gameengine/ecs/benchmark       0.008s
+ok      github.com/therealfakemoot/go/gameengine/ecs/benchmark       0.008s
 ```
 
 #### Iteration time for 100 entities:
@@ -137,7 +137,7 @@ ok      github.com/marioolofo/go/gameengine/ecs/benchmark       0.008s
 ```sh
 goos: linux
 goarch: amd64
-pkg: github.com/marioolofo/go/gameengine/ecs/benchmark
+pkg: github.com/therealfakemoot/go/gameengine/ecs/benchmark
 cpu: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
 BenchmarkEntitas-8              1000000000               0.003533 ns/op
 BenchmarkEnto-8                 1000000000               0.02393 ns/op
@@ -145,14 +145,14 @@ BenchmarkGecs-8                 1000000000               0.01464 ns/op
 BenchmarkLecsGO-8               1000000000               0.0006838 ns/op
 BenchmarkGameEngineECS-8        1000000000               0.002037 ns/op
 PASS
-ok      github.com/marioolofo/go/gameengine/ecs/benchmark       0.308s
+ok      github.com/therealfakemoot/go/gameengine/ecs/benchmark       0.308s
 ```
 
 **10000 iterations:**
 ```sh
 goos: linux
 goarch: amd64
-pkg: github.com/marioolofo/go/gameengine/ecs/benchmark
+pkg: github.com/therealfakemoot/go/gameengine/ecs/benchmark
 cpu: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
 BenchmarkEntitas-8              1000000000               0.02744 ns/op
 BenchmarkEnto-8                 1000000000               0.2404 ns/op
@@ -160,14 +160,14 @@ BenchmarkGecs-8                 1000000000               0.1638 ns/op
 BenchmarkLecsGO-8               1000000000               0.02645 ns/op
 BenchmarkGameEngineECS-8        1000000000               0.01831 ns/op
 PASS
-ok      github.com/marioolofo/go/gameengine/ecs/benchmark       5.679s
+ok      github.com/therealfakemoot/go/gameengine/ecs/benchmark       5.679s
 ```
 
 **100000 iterations:**
 ```sh
 goos: linux
 goarch: amd64
-pkg: github.com/marioolofo/go/gameengine/ecs/benchmark
+pkg: github.com/therealfakemoot/go/gameengine/ecs/benchmark
 cpu: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
 BenchmarkEntitas-8              1000000000           0.2639 ns/op
 BenchmarkEnto-8                         1        2380309375 ns/op
@@ -175,7 +175,7 @@ BenchmarkGecs-8                         1        1749332537 ns/op
 BenchmarkLecsGO-8                       1        1366320329 ns/op
 BenchmarkGameEngineECS-8        1000000000           0.1825 ns/op
 PASS
-ok      github.com/marioolofo/go/gameengine/ecs/benchmark       11.826s
+ok      github.com/therealfakemoot/go/gameengine/ecs/benchmark       11.826s
 ```
 
 #### 100 iterations for x entities allocated:
@@ -183,7 +183,7 @@ ok      github.com/marioolofo/go/gameengine/ecs/benchmark       11.826s
 ```sh
 goos: linux
 goarch: amd64
-pkg: github.com/marioolofo/go/gameengine/ecs/benchmark
+pkg: github.com/therealfakemoot/go/gameengine/ecs/benchmark
 cpu: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
 BenchmarkEntitas-8              1000000000               0.1011 ns/op
 BenchmarkEnto-8                 1000000000               0.2553 ns/op
@@ -191,14 +191,14 @@ BenchmarkGecs-8                 1000000000               0.1471 ns/op
 BenchmarkLecsGO-8               1000000000               0.01919 ns/op
 BenchmarkGameEngineECS-8        1000000000               0.02215 ns/op
 PASS
-ok      github.com/marioolofo/go/gameengine/ecs/benchmark       6.777s
+ok      github.com/therealfakemoot/go/gameengine/ecs/benchmark       6.777s
 ```
 
 **50000 entities:**
 ```sh
 goos: linux
 goarch: amd64
-pkg: github.com/marioolofo/go/gameengine/ecs/benchmark
+pkg: github.com/therealfakemoot/go/gameengine/ecs/benchmark
 cpu: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
 BenchmarkEntitas-8                     1        1064971463 ns/op
 BenchmarkEnto-8                        1        1303889925 ns/op
@@ -206,14 +206,14 @@ BenchmarkGecs-8                 1000000000               0.7330 ns/op
 BenchmarkLecsGO-8               1000000000               0.1251 ns/op
 BenchmarkGameEngineECS-8        1000000000               0.1117 ns/op
 PASS
-ok      github.com/marioolofo/go/gameengine/ecs/benchmark       37.989s
+ok      github.com/therealfakemoot/go/gameengine/ecs/benchmark       37.989s
 ```
 
 **100000 iterations:**
 ```sh
 goos: linux
 goarch: amd64
-pkg: github.com/marioolofo/go/gameengine/ecs/benchmark
+pkg: github.com/therealfakemoot/go/gameengine/ecs/benchmark
 cpu: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
 BenchmarkEntitas-8                     1        2276978192 ns/op
 BenchmarkEnto-8                        1        2609283178 ns/op
@@ -221,7 +221,7 @@ BenchmarkGecs-8                        1        1448020979 ns/op
 BenchmarkLecsGO-8               1000000000               0.2732 ns/op
 BenchmarkGameEngineECS-8        1000000000               0.2230 ns/op
 PASS
-ok      github.com/marioolofo/go/gameengine/ecs/benchmark       13.763s
+ok      github.com/therealfakemoot/go/gameengine/ecs/benchmark       13.763s
 ```
 
 
@@ -232,7 +232,7 @@ This project is distributed under the MIT licence.
 ```
 MIT License
 
-Copyright (c) 2022 Mario Olofo <mario.olofo@gmail.com>
+Copyright (c) 2022 Nick Dumas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

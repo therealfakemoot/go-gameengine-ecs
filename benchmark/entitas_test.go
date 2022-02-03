@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	ecs "github.com/marioolofo/go-gameengine-ecs/benchmark/Entitas"
+	ecs "github.com/therealfakemoot/go-gameengine-ecs/benchmark/Entitas"
 )
 
 type Transform struct {
@@ -21,11 +21,11 @@ func (t *Transform) Executer() {
 		phys := e.GetEPhysics2D()
 		tr := e.GetETransform2D()
 
-		Velx := phys.Velx + phys.Accelx * dt
-		Vely := phys.Vely + phys.Accely * dt
+		Velx := phys.Velx + phys.Accelx*dt
+		Vely := phys.Vely + phys.Accely*dt
 
-		X := tr.X + Velx * dt
-		Y := tr.Y + Vely * dt
+		X := tr.X + Velx*dt
+		Y := tr.Y + Vely*dt
 
 		phys.Velx *= 0.99
 		phys.Vely *= 0.99

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/marioolofo/go-gameengine-ecs"
+	"github.com/therealfakemoot/go-gameengine-ecs"
 )
 
 func BenchmarkGameEngineECS(b *testing.B) {

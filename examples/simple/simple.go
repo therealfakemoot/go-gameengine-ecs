@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/marioolofo/go-gameengine-ecs"
+	"github.com/therealfakemoot/go-gameengine-ecs"
 )
 
 // Component IDs
